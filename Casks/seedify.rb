@@ -3,7 +3,7 @@ cask "seedify" do
   name "seedify"
   desc "Create seed phrases deterministically from SSH keys"
   homepage "https://github.com/complex-gh/seedify"
-  version "0.0.1-test2"
+  version "0.0.1-test3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "seedify" do
   on_macos do
     on_intel do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_darwin_amd64.tar.gz"
-      sha256 "7db0fe22a2067826be7305613c29299dfeea94baa4710c38b0ee71780f5f054b"
+      sha256 "a9812ea9c760e3d9bc5897384c9504456a8dfd40cc906a403587b56885721022"
     end
     on_arm do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_darwin_arm64.tar.gz"
-      sha256 "c0911e6543e57a37394c321900fb1b19d07027e756e0edf0c69ef41571e4508c"
+      sha256 "07d82d132ba5e40bfda4c61c5cf6e29988f2997145a8fbb80528fe929f85501b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_linux_amd64.tar.gz"
-      sha256 "78c1fac22cb04572eb821b9b2f9bb1a9e328ab82c0dee8e5f0c0eb6d08308f3c"
+      sha256 "bb467a016156b763dd23c6fc7be5f83e20d1061128f139a7eca4aa6c274dc076"
     end
     on_arm do
       url "https://github.com/complex-gh/seedify/releases/download/v#{version}/seedify_linux_arm64.tar.gz"
-      sha256 "5e35f7d23099c29cc279ecbe1a66dcd8bec753b994ae9c857e9073b1591cd57a"
+      sha256 "aba0b6b6931702a87e99705d56b0de29c02bc77ab90ae83162436995ff30d633"
     end
   end
 
@@ -41,7 +41,7 @@ cask "seedify" do
 
   caveats do
     "seedify is not signed/notarized. On first run, macOS may block it."
-    "If you see "seedify is damaged and cannot be opened", run:"
+    "If you see 'seedify is damaged and cannot be opened', run:"
     "  xattr -dr com.apple.quarantine $(which seedify)"
   end
 
