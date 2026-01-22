@@ -1,0 +1,7 @@
+# Disable Sorbet/BlockMethodDefinition cop for this tap.
+# GoReleaser generates `def install` inside on_macos/on_linux blocks
+# which triggers this cop. This is a known limitation of GoReleaser's
+# formula template generation.
+
+Sorbet/BlockMethodDefinition:
+  Enabled: false
