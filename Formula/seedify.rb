@@ -5,13 +5,13 @@
 class Seedify < Formula
   desc "Convert SSH keys to BIP-39 seed phrases"
   homepage "https://github.com/complex-gh/seedify"
-  version "1.5.0"
+  version "1.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/complex-gh/seedify/releases/download/v1.5.0/seedify_1.5.0_Darwin_x86_64.tar.gz"
-      sha256 "b6210478b26235ab91fd06a8b190c03fcebf5e70cd993db6266e02eb7f0dcf4e"
+      url "https://github.com/complex-gh/seedify/releases/download/v1.5.1/seedify_1.5.1_Darwin_x86_64.tar.gz"
+      sha256 "5272fcd4e0c8ba2008ea2240faebb189b9e540e91e44604b36d87d403c27315c"
 
       def install
         bin.install "seedify"
@@ -22,8 +22,8 @@ class Seedify < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/complex-gh/seedify/releases/download/v1.5.0/seedify_1.5.0_Darwin_arm64.tar.gz"
-      sha256 "2a21485e802908cc2202acc00e5f6e783ecd6e2b7c5b84a2b8ae8a7332d7895b"
+      url "https://github.com/complex-gh/seedify/releases/download/v1.5.1/seedify_1.5.1_Darwin_arm64.tar.gz"
+      sha256 "e30c5f3cf91c992df499f8f1213490d3aae18e2631dc1b6d218ccbd753a65aaf"
 
       def install
         bin.install "seedify"
@@ -37,8 +37,8 @@ class Seedify < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/complex-gh/seedify/releases/download/v1.5.0/seedify_1.5.0_Linux_x86_64.tar.gz"
-      sha256 "34ee67c5be4b02d0bc710fe5f6978388eb873e34793e286b7c5a763b7d0d659e"
+      url "https://github.com/complex-gh/seedify/releases/download/v1.5.1/seedify_1.5.1_Linux_x86_64.tar.gz"
+      sha256 "6499f868bf0397335e15022058c4995cdf5bd7d5eb22743322ff43a0804e9570"
       def install
         bin.install "seedify"
         bash_completion.install "completions/seedify.bash" => "seedify"
@@ -48,8 +48,8 @@ class Seedify < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/complex-gh/seedify/releases/download/v1.5.0/seedify_1.5.0_Linux_armv7.tar.gz"
-      sha256 "f9c6ade7cd652b777a852974dbc158f02a13cea2e350185294bcf5522c919ab4"
+      url "https://github.com/complex-gh/seedify/releases/download/v1.5.1/seedify_1.5.1_Linux_armv7.tar.gz"
+      sha256 "a783663ac2e758175d7f0032a3db5b45a779042969b5fa83ba1ea063a42f4536"
       def install
         bin.install "seedify"
         bash_completion.install "completions/seedify.bash" => "seedify"
@@ -59,8 +59,8 @@ class Seedify < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/complex-gh/seedify/releases/download/v1.5.0/seedify_1.5.0_Linux_arm64.tar.gz"
-      sha256 "9e2c698fa454080f13d7a8417a28ff93ff94f37b527c55b02e4eb4d8eb9e8b6f"
+      url "https://github.com/complex-gh/seedify/releases/download/v1.5.1/seedify_1.5.1_Linux_arm64.tar.gz"
+      sha256 "24b6850d63e0dc89b561ca9b625fe057027f70455401082ceb7d5612d03b336e"
       def install
         bin.install "seedify"
         bash_completion.install "completions/seedify.bash" => "seedify"
